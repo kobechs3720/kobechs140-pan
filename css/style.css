@@ -1,0 +1,119 @@
+@charset "utf-8";
+ 
+/*共通部分
+---------------------------------------------------------------------------------------------------*/
+html{
+    font-size:100%;
+}
+ 
+body{
+    font-family:"Yu Gothic Medium","游ゴシック Medium",Yufothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+    line-height:1.7;
+    color:#fff;
+    background-color: rgb(44, 31, 18);
+    
+}
+header{
+    background-color: rgb(26, 18, 11);
+    font-size: 20px;
+}
+
+ 
+h1{
+    text-align: center;
+}
+ 
+#home{
+    background-color: rgb(44, 31, 18);
+    background-image:url(../images/bg_pan.jpg);
+    background-blend-mode: soft-light;
+    min-height:100vh;
+}
+ 
+.home{
+    background-size:cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    
+}
+ 
+.home.title{
+    
+    position: absolute;
+    top:0;
+    left:0;
+ 
+}
+#t1{
+    
+    width:100%;
+    color:white;
+    font-size:9vh;
+    margin-top:0px;
+    padding-top:100px;
+    text-align: center;
+}
+#t2{ 
+    width:100%;
+    color:white;
+    
+    font-size:7vh;
+    text-align: center;
+}
+.button{
+    background-color:rgb(49, 32, 9);
+    color:white;
+    font-size: 40px;
+}
+ 
+ul{
+    list-style: none;
+}
+.menu{
+    display:flex;
+    flex-wrap: wrap;
+}
+.menu li{
+    width:calc(100%/3);
+    padding:0 5px;
+    box-sizing: border-box;
+    
+}
+.menu li img{
+    max-width: 100%;
+    height:auto;
+    border:solid 1px #ccc;
+}
+
+.main-nav{
+    display: flex;
+    text-transform: uppercase;
+    list-style: none;
+    
+
+}
+.main-nav li{
+    margin-left:36px;
+    
+}
+.main-nav a{
+    color:white;
+    text-decoration: none;
+
+}
+
+footer{
+    text-align: right;
+}
+ 
+ 
+ 
+/*モバイル版
+---------------------------------------------------------------------------------------------------*/
+@media (max-width:600px){
+    .page-title{
+   font-size:2.5rem;
+    }
+}
